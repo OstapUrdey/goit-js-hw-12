@@ -241,3 +241,80 @@ background-color: #4e75ff;;
   border-color: #ccc;
   cursor: not-allowed;
 }
+
+/*SNACKBAR*/
+.form-snackbar {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ height: 100vh;
+ width: 200vh;
+ margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.delay-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-color: #808080;
+}
+
+.delay-input:hover {
+  border-color: #000000;
+}
+
+.delay-input:active {
+  border-color: #4E75FF;
+}
+
+.delay-input input {
+  border: 1px solid #808080;
+border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.form fieldset {
+  width: 340px;
+height: 50px;
+  border-radius: 4px;
+  stroke-width: 1px;;
+  padding: 10px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form fieldset:hover {
+  border-color: #000000;
+}
+
+.form button {
+  border-radius: 8px;
+padding: 8px 16px;
+width: 360px;
+height: 40px;
+  border: none;
+  background-color: #4E75FF;
+  color: white;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #6C8CFF;
+}
