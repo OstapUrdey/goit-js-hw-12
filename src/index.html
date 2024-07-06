@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Search images..." />
-      <button id="search-button">Search</button>
-    </div>
 
-    <script type="module" src="./js/pixabay-api.js"></script>
-    <script type="module" src="./js/render-functions.js"></script>
+    <form class="search-form" id="searchForm">
+      <input type="text" name="query" id="search-input" placeholder="Search images..." autocomplete="off" />
+      <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <div class="loader" id="loader" style="display: none;"></div>
+
+    <div class="gallery"></div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
