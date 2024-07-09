@@ -26,6 +26,14 @@ function handleSearch(event) {
     const form = event.currentTarget;
     const queryValue = form.elements.query.value.trim().toLowerCase();
 
+    if (!queryValue) {
+        iziToast.error({
+            title: 'Error',
+            message: 'Please enter a search query.',
+        });
+        return;
+    }
+
     clearGallery();
     showLoader();
 
